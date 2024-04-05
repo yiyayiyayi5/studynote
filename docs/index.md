@@ -6,7 +6,7 @@ hero:
   text: "记录学习"
   tagline: "少抱怨，多思考，未来更美好"
   image:
-    src: /public/photo/3.svg
+    src: /photo/3.svg
   actions:
     - theme: brand
       text: 开始阅读📖
