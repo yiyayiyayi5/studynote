@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { siderbar } from "./sidebar";
+import vitepressMdAssetsPlugin from "./script/md-asssets-plug";
 export default defineConfig({
   title: "咿咿",
   description: "学习笔记",
@@ -26,5 +27,12 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/vuejs/vitepress" },
     ],
+    footer: {
+      message: "少抱怨，多思考，未来更美好",
+      copyright: "Copyright © 2023-present XD",
+    },
+  },
+  vite: {
+    plugins: [vitepressMdAssetsPlugin()],
   },
 });
